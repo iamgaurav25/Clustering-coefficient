@@ -3,17 +3,18 @@ using namespace std;
 
 int main()
 { 
-	set<pair<int, int>> container; 
-	set<pair<int, int>>::iterator it; 
+	set<pair<int, int> > container; 
+	set<pair<int, int> >::iterator it; 
  
 	srand(time(NULL)); 
 
 	int vertices;  
 	int edges;  
+	FILE *fp = fopen("inputGraph.txt","w");
  	
  	cin>>vertices>>edges;
 
-		printf("%d %d\n", vertices,edges); 
+		fprintf(fp,"%d %d\n", vertices,edges); 
 
 		 
 		for (int j=1; j<=edges; j++) 
@@ -36,8 +37,8 @@ int main()
 		} 
 
 		for (it=container.begin(); it!=container.end(); ++it) 
-			printf("%d %d\n", it->first, it->second); 
-
+			fprintf(fp,"%d %d\n", it->first, it->second); 
+fclose(fp);
 		container.clear(); 
 		 
 		 
