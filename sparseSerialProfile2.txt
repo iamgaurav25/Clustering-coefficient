@@ -1,0 +1,246 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 99.60     10.09    10.09   112116     0.00     0.00  insert(int**, int, int, int, int&)
+  0.20     10.11     0.02        2     0.01     0.11  multiply2(int**&, int**&, int**&, int&, int&, int&, int)
+  0.10     10.12     0.01   222715     0.00     0.00  void std::__unguarded_linear_insert<int**, __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)> >(int**, __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)>)
+  0.10     10.13     0.01    20411     0.00     0.00  int** std::__unguarded_partition<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>)
+  0.05     10.13     0.01  3274544     0.00     0.00  sortcol1(int const*, int const*)
+  0.05     10.14     0.01   138401     0.00     0.00  sortcol(int const*, int const*)
+  0.00     10.14     0.00  3142572     0.00     0.00  bool __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>::operator()<int**, int**>(int**, int**)
+  0.00     10.14     0.00  2281844     0.00     0.00  std::remove_reference<int*&>::type&& std::move<int*&>(int*&)
+  0.00     10.14     0.00   596252     0.00     0.00  void std::swap<int*>(int*&, int*&)
+  0.00     10.14     0.00   596252     0.00     0.00  void std::iter_swap<int**, int**>(int**, int**)
+  0.00     10.14     0.00   270373     0.00     0.00  bool __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)>::operator()<int*, int**>(int*&, int**)
+  0.00     10.14     0.00   222715     0.00     0.00  __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)>::_Val_comp_iter(bool (*)(int const*, int const*))
+  0.00     10.14     0.00   222715     0.00     0.00  __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)> __gnu_cxx::__ops::__val_comp_iter<bool (*)(int const*, int const*)>(__gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>)
+  0.00     10.14     0.00    20411     0.00     0.00  void std::__move_median_to_first<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>)
+  0.00     10.14     0.00    20411     0.00     0.00  int** std::__unguarded_partition_pivot<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>)
+  0.00     10.14     0.00        5     0.00     0.00  __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>::_Iter_comp_iter(bool (*)(int const*, int const*))
+  0.00     10.14     0.00        5     0.00     0.00  __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> __gnu_cxx::__ops::__iter_comp_iter<bool (*)(int const*, int const*)>(bool (*)(int const*, int const*))
+  0.00     10.14     0.00        5     0.00     0.00  void std::__insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>)
+  0.00     10.14     0.00        5     0.00     0.00  void std::__introsort_loop<int**, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>)
+  0.00     10.14     0.00        5     0.00     0.00  void std::__final_insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>)
+  0.00     10.14     0.00        5     0.00     0.00  void std::__unguarded_insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>)
+  0.00     10.14     0.00        5     0.00     0.00  std::__lg(long)
+  0.00     10.14     0.00        5     0.00     0.01  void std::sort<int**, bool (*)(int const*, int const*)>(int**, int**, bool (*)(int const*, int const*))
+  0.00     10.14     0.00        5     0.00     0.01  void std::__sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>)
+  0.00     10.14     0.00        3     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const
+  0.00     10.14     0.00        2     0.00     0.00  std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const
+  0.00     10.14     0.00        1     0.00     0.00  _GLOBAL__sub_I__Z13print2DVectorPPii
+  0.00     10.14     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00     10.14     0.00        1     0.00     0.00  copy(int**, int**, int)
+  0.00     10.14     0.00        1     0.00    10.03  multiply1(int**&, int**&, int**&, int&, int&, int&, int)
+  0.00     10.14     0.00        1     0.00     0.00  transpose(int**, int)
+  0.00     10.14     0.00        1     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1000l> >::count() const
+  0.00     10.14     0.00        1     0.00     0.00  std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+  0.00     10.14     0.00        1     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, long, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+  0.00     10.14     0.00        1     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&)
+  0.00     10.14     0.00        1     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1000l> >::duration<long, void>(long const&)
+  0.00     10.14     0.00        1     0.00     0.00  std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&)
+  0.00     10.14     0.00        1     0.00     0.00  std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+
+			Call graph
+
+
+granularity: each sample hit covers 2 byte(s) for 0.10% of 10.14 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00   10.14                 main [1]
+                0.00   10.03       1/1           multiply1(int**&, int**&, int**&, int&, int&, int&, int) [3]
+                0.01    0.10       1/2           multiply2(int**&, int**&, int**&, int&, int&, int&, int) [4]
+                0.00    0.00       1/1           std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&) [44]
+                0.00    0.00       1/1           std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [40]
+                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1000l> >::count() const [39]
+-----------------------------------------------
+                0.18    0.00    1980/112116      multiply2(int**&, int**&, int**&, int&, int&, int&, int) [4]
+                9.91    0.00  110136/112116      multiply1(int**&, int**&, int**&, int&, int&, int&, int) [3]
+[2]     99.5   10.09    0.00  112116         insert(int**, int, int, int, int&) [2]
+-----------------------------------------------
+                0.00   10.03       1/1           main [1]
+[3]     98.9    0.00   10.03       1         multiply1(int**&, int**&, int**&, int&, int&, int&, int) [3]
+                9.91    0.00  110136/112116      insert(int**, int, int, int, int&) [2]
+                0.01    0.10       1/2           multiply2(int**&, int**&, int**&, int&, int&, int&, int) [4]
+                0.00    0.01       1/5           void std::sort<int**, bool (*)(int const*, int const*)>(int**, int**, bool (*)(int const*, int const*)) [5]
+                0.00    0.00       1/1           transpose(int**, int) [38]
+                0.00    0.00       1/1           copy(int**, int**, int) [37]
+-----------------------------------------------
+                0.01    0.10       1/2           multiply1(int**&, int**&, int**&, int&, int&, int&, int) [3]
+                0.01    0.10       1/2           main [1]
+[4]      2.2    0.02    0.20       2         multiply2(int**&, int**&, int**&, int&, int&, int&, int) [4]
+                0.18    0.00    1980/112116      insert(int**, int, int, int, int&) [2]
+                0.00    0.02       4/5           void std::sort<int**, bool (*)(int const*, int const*)>(int**, int**, bool (*)(int const*, int const*)) [5]
+-----------------------------------------------
+                0.00    0.01       1/5           multiply1(int**&, int**&, int**&, int&, int&, int&, int) [3]
+                0.00    0.02       4/5           multiply2(int**&, int**&, int**&, int&, int&, int&, int) [4]
+[5]      0.3    0.00    0.03       5         void std::sort<int**, bool (*)(int const*, int const*)>(int**, int**, bool (*)(int const*, int const*)) [5]
+                0.00    0.03       5/5           void std::__sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [6]
+                0.00    0.00       5/5           __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> __gnu_cxx::__ops::__iter_comp_iter<bool (*)(int const*, int const*)>(bool (*)(int const*, int const*)) [31]
+-----------------------------------------------
+                0.00    0.03       5/5           void std::sort<int**, bool (*)(int const*, int const*)>(int**, int**, bool (*)(int const*, int const*)) [5]
+[6]      0.3    0.00    0.03       5         void std::__sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [6]
+                0.00    0.02       5/5           void std::__introsort_loop<int**, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [8]
+                0.00    0.01       5/5           void std::__final_insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [10]
+                0.00    0.00       5/5           std::__lg(long) [32]
+-----------------------------------------------
+                0.00    0.02   20411/20411       void std::__introsort_loop<int**, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [8]
+[7]      0.2    0.00    0.02   20411         int** std::__unguarded_partition_pivot<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [7]
+                0.01    0.01   20411/20411       int** std::__unguarded_partition<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [9]
+                0.00    0.00   20411/20411       void std::__move_median_to_first<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [17]
+-----------------------------------------------
+                               20411             void std::__introsort_loop<int**, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [8]
+                0.00    0.02       5/5           void std::__sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [6]
+[8]      0.2    0.00    0.02       5+20411   void std::__introsort_loop<int**, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [8]
+                0.00    0.02   20411/20411       int** std::__unguarded_partition_pivot<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [7]
+                               20411             void std::__introsort_loop<int**, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [8]
+-----------------------------------------------
+                0.01    0.01   20411/20411       int** std::__unguarded_partition_pivot<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [7]
+[9]      0.2    0.01    0.01   20411         int** std::__unguarded_partition<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [9]
+                0.00    0.01 3087683/3142572     bool __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>::operator()<int**, int**>(int**, int**) [13]
+                0.00    0.00  575841/596252      void std::iter_swap<int**, int**>(int**, int**) [27]
+-----------------------------------------------
+                0.00    0.01       5/5           void std::__sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [6]
+[10]     0.1    0.00    0.01       5         void std::__final_insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [10]
+                0.00    0.01       5/5           void std::__unguarded_insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [12]
+                0.00    0.00       5/5           void std::__insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [18]
+-----------------------------------------------
+                0.00    0.00      75/222715      void std::__insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [18]
+                0.01    0.00  222640/222715      void std::__unguarded_insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [12]
+[11]     0.1    0.01    0.00  222715         void std::__unguarded_linear_insert<int**, __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)> >(int**, __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)>) [11]
+                0.00    0.00  270373/270373      bool __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)>::operator()<int*, int**>(int*&, int**) [16]
+                0.00    0.00  493088/2281844     std::remove_reference<int*&>::type&& std::move<int*&>(int*&) [25]
+-----------------------------------------------
+                0.00    0.01       5/5           void std::__final_insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [10]
+[12]     0.1    0.00    0.01       5         void std::__unguarded_insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [12]
+                0.01    0.00  222640/222715      void std::__unguarded_linear_insert<int**, __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)> >(int**, __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)>) [11]
+                0.00    0.00  222640/222715      __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)> __gnu_cxx::__ops::__val_comp_iter<bool (*)(int const*, int const*)>(__gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [29]
+-----------------------------------------------
+                0.00    0.00      75/3142572     void std::__insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [18]
+                0.00    0.00   54814/3142572     void std::__move_median_to_first<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [17]
+                0.00    0.01 3087683/3142572     int** std::__unguarded_partition<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [9]
+[13]     0.1    0.00    0.01 3142572         bool __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>::operator()<int**, int**>(int**, int**) [13]
+                0.00    0.00 3026491/3274544     sortcol1(int const*, int const*) [14]
+                0.00    0.00  116081/138401      sortcol(int const*, int const*) [15]
+-----------------------------------------------
+                0.00    0.00  248053/3274544     bool __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)>::operator()<int*, int**>(int*&, int**) [16]
+                0.00    0.00 3026491/3274544     bool __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>::operator()<int**, int**>(int**, int**) [13]
+[14]     0.0    0.01    0.00 3274544         sortcol1(int const*, int const*) [14]
+-----------------------------------------------
+                0.00    0.00   22320/138401      bool __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)>::operator()<int*, int**>(int*&, int**) [16]
+                0.00    0.00  116081/138401      bool __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>::operator()<int**, int**>(int**, int**) [13]
+[15]     0.0    0.01    0.00  138401         sortcol(int const*, int const*) [15]
+-----------------------------------------------
+                0.00    0.00  270373/270373      void std::__unguarded_linear_insert<int**, __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)> >(int**, __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)>) [11]
+[16]     0.0    0.00    0.00  270373         bool __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)>::operator()<int*, int**>(int*&, int**) [16]
+                0.00    0.00   22320/138401      sortcol(int const*, int const*) [15]
+                0.00    0.00  248053/3274544     sortcol1(int const*, int const*) [14]
+-----------------------------------------------
+                0.00    0.00   20411/20411       int** std::__unguarded_partition_pivot<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [7]
+[17]     0.0    0.00    0.00   20411         void std::__move_median_to_first<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [17]
+                0.00    0.00   54814/3142572     bool __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>::operator()<int**, int**>(int**, int**) [13]
+                0.00    0.00   20411/596252      void std::iter_swap<int**, int**>(int**, int**) [27]
+-----------------------------------------------
+                0.00    0.00       5/5           void std::__final_insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [10]
+[18]     0.0    0.00    0.00       5         void std::__insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [18]
+                0.00    0.00      75/222715      void std::__unguarded_linear_insert<int**, __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)> >(int**, __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)>) [11]
+                0.00    0.00      75/3142572     bool __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>::operator()<int**, int**>(int**, int**) [13]
+                0.00    0.00      75/222715      __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)> __gnu_cxx::__ops::__val_comp_iter<bool (*)(int const*, int const*)>(__gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [29]
+-----------------------------------------------
+                0.00    0.00  493088/2281844     void std::__unguarded_linear_insert<int**, __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)> >(int**, __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)>) [11]
+                0.00    0.00 1788756/2281844     void std::swap<int*>(int*&, int*&) [26]
+[25]     0.0    0.00    0.00 2281844         std::remove_reference<int*&>::type&& std::move<int*&>(int*&) [25]
+-----------------------------------------------
+                0.00    0.00  596252/596252      void std::iter_swap<int**, int**>(int**, int**) [27]
+[26]     0.0    0.00    0.00  596252         void std::swap<int*>(int*&, int*&) [26]
+                0.00    0.00 1788756/2281844     std::remove_reference<int*&>::type&& std::move<int*&>(int*&) [25]
+-----------------------------------------------
+                0.00    0.00   20411/596252      void std::__move_median_to_first<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [17]
+                0.00    0.00  575841/596252      int** std::__unguarded_partition<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [9]
+[27]     0.0    0.00    0.00  596252         void std::iter_swap<int**, int**>(int**, int**) [27]
+                0.00    0.00  596252/596252      void std::swap<int*>(int*&, int*&) [26]
+-----------------------------------------------
+                0.00    0.00  222715/222715      __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)> __gnu_cxx::__ops::__val_comp_iter<bool (*)(int const*, int const*)>(__gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [29]
+[28]     0.0    0.00    0.00  222715         __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)>::_Val_comp_iter(bool (*)(int const*, int const*)) [28]
+-----------------------------------------------
+                0.00    0.00      75/222715      void std::__insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [18]
+                0.00    0.00  222640/222715      void std::__unguarded_insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [12]
+[29]     0.0    0.00    0.00  222715         __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)> __gnu_cxx::__ops::__val_comp_iter<bool (*)(int const*, int const*)>(__gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [29]
+                0.00    0.00  222715/222715      __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)>::_Val_comp_iter(bool (*)(int const*, int const*)) [28]
+-----------------------------------------------
+                0.00    0.00       5/5           __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> __gnu_cxx::__ops::__iter_comp_iter<bool (*)(int const*, int const*)>(bool (*)(int const*, int const*)) [31]
+[30]     0.0    0.00    0.00       5         __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>::_Iter_comp_iter(bool (*)(int const*, int const*)) [30]
+-----------------------------------------------
+                0.00    0.00       5/5           void std::sort<int**, bool (*)(int const*, int const*)>(int**, int**, bool (*)(int const*, int const*)) [5]
+[31]     0.0    0.00    0.00       5         __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> __gnu_cxx::__ops::__iter_comp_iter<bool (*)(int const*, int const*)>(bool (*)(int const*, int const*)) [31]
+                0.00    0.00       5/5           __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>::_Iter_comp_iter(bool (*)(int const*, int const*)) [30]
+-----------------------------------------------
+                0.00    0.00       5/5           void std::__sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [6]
+[32]     0.0    0.00    0.00       5         std::__lg(long) [32]
+-----------------------------------------------
+                0.00    0.00       1/3           std::chrono::duration<long, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, long, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [41]
+                0.00    0.00       2/3           std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [45]
+[33]     0.0    0.00    0.00       3         std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const [33]
+-----------------------------------------------
+                0.00    0.00       2/2           std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&) [44]
+[34]     0.0    0.00    0.00       2         std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const [34]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [69]
+[35]     0.0    0.00    0.00       1         _GLOBAL__sub_I__Z13print2DVectorPPii [35]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [36]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__Z13print2DVectorPPii [35]
+[36]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [36]
+-----------------------------------------------
+                0.00    0.00       1/1           multiply1(int**&, int**&, int**&, int&, int&, int&, int) [3]
+[37]     0.0    0.00    0.00       1         copy(int**, int**, int) [37]
+-----------------------------------------------
+                0.00    0.00       1/1           multiply1(int**&, int**&, int**&, int&, int&, int&, int) [3]
+[38]     0.0    0.00    0.00       1         transpose(int**, int) [38]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[39]     0.0    0.00    0.00       1         std::chrono::duration<long, std::ratio<1l, 1000l> >::count() const [39]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[40]     0.0    0.00    0.00       1         std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [40]
+                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, long, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [41]
+-----------------------------------------------
+                0.00    0.00       1/1           std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [40]
+[41]     0.0    0.00    0.00       1         std::chrono::duration<long, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, long, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [41]
+                0.00    0.00       1/3           std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const [33]
+                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1000l> >::duration<long, void>(long const&) [43]
+-----------------------------------------------
+                0.00    0.00       1/1           std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [45]
+[42]     0.0    0.00    0.00       1         std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&) [42]
+-----------------------------------------------
+                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, long, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [41]
+[43]     0.0    0.00    0.00       1         std::chrono::duration<long, std::ratio<1l, 1000l> >::duration<long, void>(long const&) [43]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[44]     0.0    0.00    0.00       1         std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&) [44]
+                0.00    0.00       2/2           std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const [34]
+                0.00    0.00       1/1           std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [45]
+-----------------------------------------------
+                0.00    0.00       1/1           std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&) [44]
+[45]     0.0    0.00    0.00       1         std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [45]
+                0.00    0.00       2/3           std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const [33]
+                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&) [42]
+-----------------------------------------------
+
+Index by function name
+
+  [35] _GLOBAL__sub_I__Z13print2DVectorPPii [29] __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)> __gnu_cxx::__ops::__val_comp_iter<bool (*)(int const*, int const*)>(__gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [9] int** std::__unguarded_partition<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>)
+  [36] __static_initialization_and_destruction_0(int, int) [31] __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> __gnu_cxx::__ops::__iter_comp_iter<bool (*)(int const*, int const*)>(bool (*)(int const*, int const*)) [10] void std::__final_insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>)
+  [37] copy(int**, int**, int) [34] std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const [17] void std::__move_median_to_first<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>)
+   [2] insert(int**, int, int, int, int&) [33] std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const [11] void std::__unguarded_linear_insert<int**, __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)> >(int**, __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)>)
+  [15] sortcol(int const*, int const*) [39] std::chrono::duration<long, std::ratio<1l, 1000l> >::count() const [12] void std::__unguarded_insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>)
+  [14] sortcol1(int const*, int const*) [40] std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [7] int** std::__unguarded_partition_pivot<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>)
+   [3] multiply1(int**&, int**&, int**&, int&, int&, int&, int) [41] std::chrono::duration<long, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, long, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [32] std::__lg(long)
+   [4] multiply2(int**&, int**&, int**&, int&, int&, int&, int) [42] std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&) [25] std::remove_reference<int*&>::type&& std::move<int*&>(int*&)
+  [38] transpose(int**, int)  [43] std::chrono::duration<long, std::ratio<1l, 1000l> >::duration<long, void>(long const&) [5] void std::sort<int**, bool (*)(int const*, int const*)>(int**, int**, bool (*)(int const*, int const*))
+  [28] __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)>::_Val_comp_iter(bool (*)(int const*, int const*)) [44] std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&) [26] void std::swap<int*>(int*&, int*&)
+  [16] bool __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int const*, int const*)>::operator()<int*, int**>(int*&, int**) [45] std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [6] void std::__sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>)
+  [30] __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>::_Iter_comp_iter(bool (*)(int const*, int const*)) [18] void std::__insertion_sort<int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>) [27] void std::iter_swap<int**, int**>(int**, int**)
+  [13] bool __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>::operator()<int**, int**>(int**, int**) [8] void std::__introsort_loop<int**, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)> >(int**, int**, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int const*, int const*)>)
