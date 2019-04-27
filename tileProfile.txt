@@ -1,0 +1,19 @@
+tiling executing..
+==16== NVPROF is profiling process 16, command: ./tile inputGraph.txt
+==16== Profiling application: ./tile inputGraph.txt
+==16== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   99.56%  312.63ms         2  156.31ms  156.31ms  156.32ms  MatrixMulKernel(int*, int*, int*, int, int)
+                    0.24%  738.58us         1  738.58us  738.58us  738.58us  [CUDA memcpy HtoD]
+                    0.20%  631.28us         1  631.28us  631.28us  631.28us  [CUDA memcpy DtoH]
+      API calls:   52.60%  314.41ms         2  157.20ms  878.86us  313.53ms  cudaMemcpy
+                   46.96%  280.67ms         1  280.67ms  280.67ms  280.67ms  cudaProfilerStart
+                    0.16%  978.20us        94  10.406us     234ns  392.27us  cuDeviceGetAttribute
+                    0.15%  884.15us         3  294.72us  276.27us  320.90us  cudaMalloc
+                    0.06%  351.78us         1  351.78us  351.78us  351.78us  cuDeviceTotalMem
+                    0.05%  279.37us         2  139.69us  16.280us  263.09us  cudaLaunch
+                    0.02%  100.85us         1  100.85us  100.85us  100.85us  cuDeviceGetName
+                    0.00%  6.6990us        10     669ns     188ns  4.1580us  cudaSetupArgument
+                    0.00%  2.4740us         2  1.2370us     536ns  1.9380us  cuDeviceGetCount
+                    0.00%  2.3020us         2  1.1510us     654ns  1.6480us  cudaConfigureCall
+                    0.00%     724ns         2     362ns     310ns     414ns  cuDeviceGet
