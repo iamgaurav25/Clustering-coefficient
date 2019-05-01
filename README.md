@@ -36,3 +36,4 @@ nvcc -o streams_with_tiling streams_with_tiling.cu
 ### Execute (Parallel streams code)
 ```
 ./streams_with_tiling graph.txt
+```
