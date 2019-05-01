@@ -21,3 +21,18 @@ g++ -std=c++11 -o sparse_serial sparse_serial.cpp
 ```
 ./sparse_serial graph.txt
 ```
+### Compile (Paralle tiling code)
+```
+nvcc -o parallel_matmul parallel_matmul.cu
+```
+### Execute (Parallel tiling code)
+```
+./parallel_matmul graph.txt
+```
+### Compile (Parallel streams code)
+```
+nvcc -o streams_with_tiling streams_with_tiling.cu
+```
+### Execute (Parallel streams code)
+```
+./streams_with_tiling graph.txt
