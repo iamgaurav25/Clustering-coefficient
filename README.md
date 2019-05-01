@@ -1,5 +1,8 @@
 # Clustering-coefficient
-Various approaches to compute clustering coefficient of a graph.
+Our objective is to find the clustering coefficient of any given graph G(V,E). By
+definition, the clustering coefficient is a measure of the degree to which nodes in a
+graph tends to cluster together.Clustering coefficient of a node of a graph is given by ratio of number of triangles
+enclosed by the node to number of wedges enclosed by the same.
 
 ### Prerequisites
 Install g++,CUDA.
